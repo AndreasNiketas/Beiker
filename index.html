@@ -315,25 +315,250 @@ http://www.templatemo.com/tm-500-fluid-gallery
                 <!-- Page 4 About -->
                 <li>
                     <div class="cd-full-width">
-                        <div class="container-fluid js-tm-page-content tm-page-width tm-pad-b" data-page-no="4">
+        <div class="container-fluid js-tm-page-content tm-page-width tm-pad-b" data-page-no="4">
 
-                            <div class="tm-about-page">
-                            
-                            	<div class="row tm-white-box-margin-b">
-                                    <div class="col-xs-12">
-                                        <div class="tm-flex">
-                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
-                                                <h2 class="tm-text-title">Primera</h2>
-                                                <a href="carta1.html" class="tm-open-modal" style="display:inline-block;padding:10px 20px;background:#007bff;color:#fff;border-radius:5px;text-decoration:none;">Ver mensaje</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
-
+            <div class="tm-about-page">
+            
+                <div class="row tm-white-box-margin-b">
+                    <div class="col-xs-12">
+                        <div class="tm-flex">
+                            <div class="tm-bg-white-translucent text-xs-center tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-love-message-container">
+                                <div class="tm-love-header">
+                                    <div class="tm-floating-heart">💕</div>
+                                    <h2 class="tm-text-title tm-love-title">Un mensaje especial para ti</h2>
+                                    <div class="tm-floating-heart">💕</div>
+                                </div>
+                                
+                                <div class="tm-love-description">
+                                    <p>Después de estos 5 hermosos meses juntos, quiero compartir contigo algo que viene directo desde mi corazón...</p>
+                                </div>
+                                
+                                <div class="tm-love-button-container">
+                                    <a href="carta1.html" class="tm-love-button">
+                                        <span class="tm-button-icon">💌</span>
+                                        <span class="tm-button-text">Leer mi carta de amor</span>
+                                        <span class="tm-button-heart">❤️</span>
+                                    </a>
+                                </div>
+                                
+                                <div class="tm-love-subtitle">
+                                    <p>Para la mujer más especial de mi vida</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
                            
-                                                   
-                        </div>              
-                    </div> <!-- .cd-full-width -->
+            </div>              
+        </div> <!-- .cd-full-width -->
+<style>
+/* Estilos para la sección de amor mejorada */
+.tm-love-message-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 245, 245, 0.95) 100%);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tm-love-message-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.tm-love-message-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 182, 193, 0.1) 0%, transparent 70%);
+    animation: shimmer 4s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.tm-love-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.tm-love-title {
+    font-size: 2.2rem;
+    color: #d63384;
+    margin: 0 1rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.tm-floating-heart {
+    font-size: 1.5rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.tm-floating-heart:first-child {
+    animation-delay: 0s;
+}
+
+.tm-floating-heart:last-child {
+    animation-delay: 1.5s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.tm-love-description {
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.tm-love-description p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0;
+}
+
+.tm-love-button-container {
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.tm-love-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-width: 250px;
+    justify-content: center;
+}
+
+.tm-love-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.tm-love-button:hover::before {
+    left: 100%;
+}
+
+.tm-love-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+.tm-button-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    animation: pulse 2s infinite;
+}
+
+.tm-button-text {
+    margin: 0 0.5rem;
+}
+
+.tm-button-heart {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.05); }
+}
+
+.tm-love-subtitle {
+    position: relative;
+    z-index: 1;
+}
+
+.tm-love-subtitle p {
+    font-size: 0.9rem;
+    color: #999;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Efectos adicionales */
+.tm-love-message-container::after {
+    content: '✨';
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 1.2rem;
+    animation: sparkle 2s infinite;
+    opacity: 0.7;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 0.3; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tm-love-message-container {
+        padding: 2rem 1.5rem;
+    }
+    
+    .tm-love-title {
+        font-size: 1.8rem;
+    }
+    
+    .tm-love-button {
+        min-width: 200px;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .tm-love-description p {
+        font-size: 1rem;
+    }
+}
+</style>
 
                 </li>
                 
